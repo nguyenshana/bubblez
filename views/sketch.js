@@ -12,18 +12,20 @@ function setup() {
 function draw() {
   if(state == 0) {
     createCanvas(windowWidth, windowHeight);
-    bubbles = []
     background(173, 216, 230);
+    bubbles = []
+
     textSize(18);
     textFont("Lucidia Bright");
-    text("Click to display the bubbles :)",
-      windowWidth / 2 - 100 ,
+    text("Click for bubbles :)",
+      windowWidth / 2 - 70 ,
       windowHeight / 2);
   }
   else {
     popSound = loadSound("https://nguyenshana.github.io/bubblez/pop.m4a");
     createCanvas(windowWidth, windowHeight);
     background(173, 216, 230);
+    bubbles = []
 
     for (var i = windowWidth/4; i < 3*windowWidth/4 - 20; i = i + 35) {
       for (var j = windowHeight/4; j < 3*windowHeight/4 - 45; j = j + 35) {
