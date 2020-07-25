@@ -73,7 +73,6 @@ function mouseMoved() {
 // Taken from p5 
 // https://p5js.org/examples/form-star.html
 function star(x, y, radius1, radius2, npoints) {
-  console.log('created star');
   let angle = TWO_PI / npoints;
   let halfAngle = angle / 2.0;
   beginShape();
