@@ -169,9 +169,6 @@ class Bubble {
 
   
   animate() {
-
-    console.log('called animate');
-
     this.i = this.i + 1;
 
     push();
